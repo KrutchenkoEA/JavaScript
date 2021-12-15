@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title>Sidebar</title>
+</head>
+<body>
+
+    <div class="page">
+        <div class="gimage">
+            <img src="https://avatars.mds.yandex.net/get-zen_doc/1062011/pub_610cfad74a15af633113be2c_610cfb1724396b15b5d3e8b2/scale_1200" alt="">
+        </div>
+
+        <div class="home_content">
+            <div class="text">Home content</div>
+        </div>
+    </div>
+
+
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <box-icon type='logo' name='javascript'></box-icon>
+                <div class="logo_name">SideBar</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                    <i class='bx bx-search'></i>
+                <label>
+                    <input type="text" placeholder="Search">
+                </label>
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-grid-alt' ></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-user' ></i>
+                    <span class="links_name">User</span>
+                </a>
+                <span class="tooltip">User</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-message' ></i>
+                    <span class="links_name">Messages</span>
+                </a>
+                <span class="tooltip">Messages</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-pie-chart-alt-2' ></i>
+                    <span class="links_name">Analytics</span>
+                </a>
+                <span class="tooltip">Analytics</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-file' ></i>
+                    <span class="links_name">File manager</span>
+                </a>
+                <span class="tooltip">File manager</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog' ></i>
+                    <span class="links_name">Settings</span>
+                </a>
+                <span class="tooltip">Settings</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_detail">
+<!--                    <img src="profile.jpg" alt="">-->
+                    <div class="name_password">
+                        <div class="name">name: </div>
+                            <label>
+                                <input type="text" id="name" placeholder="Enter name">
+                            </label>
+                        <div class="password">password: </div>
+                            <label>
+                                <input type="text" id="password" placeholder="Enter password">
+                            </label>
+                    </div>
+                </div>
+                <i class='bx bxs-log-out' id="log_out">Log Out</i>
+                <i class='bx bxs-log-in' id="log_in">Log In</i>
+            </div>
+
+        </div>
+    </div>
+
+<script src="app.js"></script>
+<!--<script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>-->
+</body>
+</html>
